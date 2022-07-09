@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./style/style.scss";
-import "./style/font.css";
+// import "./style/font.css";
+import "./asset/fonts/stylesheet.css";
 import "swiper/css/bundle";
 import reportWebVitals from "./reportWebVitals";
 

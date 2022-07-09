@@ -5,7 +5,7 @@ $CF-extralight: "Criteria CF - extralight";
 $CF-regular: "Criteria CF - regular";
 $CF-medium: "Criteria CF - medium";
 $CF-semibold: "Criteria CF - semibold";
-$CF-bold: "Criteria CF - bold";
+// $CF-bold: "Criteria CF - bold";
 $CF-extrabold: "Criteria CF - extrabold";
 $CF-super: "Criteria CF - super";
 
@@ -448,20 +448,6 @@ html {
         align-items: center;
         width: 100%;
         transform: translateY(-12px);
-
-        // .scroll-bar {
-        //   width: 234px;
-        //   height: 2px;
-        //   background-color: rgba(0, 0, 0, 0.223);
-        //   border-radius: 4px;
-        //   overflow: hidden;
-
-        //   div {
-        //     background-color: $black;
-        //     height: 100%;
-        //     width: 50%;
-        //   }
-        // }
 
         a {
           font-family: $CF-semibold;
