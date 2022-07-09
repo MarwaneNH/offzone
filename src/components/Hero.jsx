@@ -3,6 +3,9 @@ import React from "react";
 function Hero() {
   return (
     <div className="hero">
+      <a href="#services" className="flech-btn">
+        <img src="../icon/flech.svg" alt="" height='15px' />
+      </a>
       <div className="bg">
         <img src="../image/3D-object01.png" alt="" />
         <img src="../image/3D-object02.png" alt="" />
@@ -10,8 +13,8 @@ function Hero() {
       </div>
       <div className="content">
         <h1>
-          We accelerate tomorrow’s vision by <i>unlocking</i> business
-          <span> potential today.</span>
+          We accelerate tomorrow’s vision by <i>unlocking</i> business{" "}
+          <span>potential today.</span>
         </h1>
         <p>
           First Digital Agency in Morocco with <span>subscriptions </span>

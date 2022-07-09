@@ -2,7 +2,7 @@ import React from "react";
 
 function Plans() {
   return (
-    <div className="plans">
+    <div className="plans" id="pricing">
       <div className="container">
         <h1>Let’s keep it simple</h1>
         <p>
@@ -59,20 +59,46 @@ function Plans() {
               <div className="price--container">
                 <span className="pg">$1000-$12000</span>
               </div>
-              <small>Pause or cancel anytime</small>
+              <small>Pricing may vary based on the project requirements</small>
             </div>
             <ul>
               <li>
-                <strong>All Design scope</strong>
+                <strong>All the Design plan features</strong>
               </li>
-              <li>Unlimited revisions</li>
-              <li>Unlimited requests</li>
-              <li>Source files included</li>
-              <li>Pause or cancel anytime</li>
+              <li>
+                <strong>UI/UX design</strong>
+              </li>
+              <li>Web & App development</li>
+              <li>3 months ongoing support</li>
+              <li>Real time collaboration via Slack</li>
             </ul>
             <div className="btns">
               <button>Get Started</button>
-              <a href="/">BOOK A CALL</a>
+            </div>
+          </div>
+
+          <div className="item">
+            <div className="title">
+              <h3>Business</h3>
+              <p>
+                More features, more requests, and expanded benefits to service
+                higher demands.
+              </p>
+            </div>
+            <div className="price">
+              <div className="price--container">
+                <span className="pg">Custom pricing</span>
+              </div>
+            </div>
+            <ul>
+              <li>All Startup plan features</li>
+              <li>All our Consultancy Services</li>
+              <li>Motion Design & Video Editing</li>
+              <li>Real time collaboration via Slack&Meetings</li>
+              <li>1 year ongoing support</li>
+            </ul>
+            <div className="btns">
+              <button>Book a call</button>
             </div>
           </div>
         </div>
