@@ -2,7 +2,7 @@
 $CF-thin: "Criteria CF - thin";
 $CF-light: "Criteria CF - light";
 $CF-extralight: "Criteria CF - extralight";
-$CF-regular: "Criteria CF - regular";
+$CF-regular: "Criteria_CF_regular";
 $CF-medium: "Criteria CF - medium";
 $CF-semibold: "Criteria CF - semibold";
 // $CF-bold: "Criteria CF - bold";
@@ -145,6 +145,7 @@ html {
           &:nth-child(1) {
             top: 60%;
             left: -105px;
+            filter: blur(2px);
           }
           &:nth-child(2) {
             bottom: 20px;
