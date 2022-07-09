@@ -219,7 +219,7 @@ html {
           justify-content: center;
 
           img {
-            margin-left: 10px;
+            margin: auto 0 auto 10px;
             display: none;
           }
 
@@ -854,6 +854,9 @@ footer {
   .main-page header nav .icon {
     display: block !important;
   }
+  .main-page header nav {
+    transform: translateX(calc(-50% - 20px));
+  }
 }
 // Header-Responsivity
 @media only screen and (max-width: 1440px) {
@@ -1077,6 +1080,17 @@ footer {
 }
 
 // -----------------------
+@media only screen and (max-width: 500px) {
+  .main-content {
+    margin-top: 50px;
+  }
+  .main-content .services,
+  .main-content .works,
+  .main-content .plans {
+    padding: 20px calc(50vw - 660px) 20px calc(50vw - 660px);
+    margin: 20px 0;
+  }
+}
 @media only screen and (max-width: 800px) {
   footer .footer-nav ul {
     margin-top: 40px;
