@@ -1,84 +1,58 @@
 @font-face {
-    font-family: 'Criteria CF - semibold';
-    src: url('fontspring-demo-criteriacf-demibold-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-demibold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Criteria_CF_semibold";
+  src: url("fontspring-demo-criteriacf-demibold-webfont.woff2") format("woff2"),
+    url("fontspring-demo-criteriacf-demibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Criteria CF - extrabold';
+  font-family: "Criteria_CF_extralight";
+  src: url("fontspring-demo-criteriacf-extralight-webfont.woff2")
+      format("woff2"),
+    url("fontspring-demo-criteriacf-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Criteria_CF_light";
+  src: url("fontspring-demo-criteriacf-light-webfont.woff2") format("woff2"),
+    url("fontspring-demo-criteriacf-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Criteria_CF_medium";
+  src: url("fontspring-demo-criteriacf-medium-webfont.woff2") format("woff2"),
+    url("fontspring-demo-criteriacf-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Criteria_CF_regular";
+  src: url("fontspring-demo-criteriacf-regular-webfont.woff2") format("woff2"),
+    url("fontspring-demo-criteriacf-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Criteria_CF_thin";
+  src: url("fontspring-demo-criteriacf-thin-webfont.woff2") format("woff2"),
+    url("fontspring-demo-criteriacf-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Criteria_CF_extrabold';
     src: url('fontspring-demo-criteriacf-extrabold-webfont.woff2') format('woff2'),
          url('fontspring-demo-criteriacf-extrabold-webfont.woff') format('woff');
-    font-weight: bold;
+    font-weight: bold;     
     font-style: normal;
-}
-@font-face {
-    font-family: 'Criteria CF - extralight';
-    src: url('fontspring-demo-criteriacf-extralight-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Criteria CF - light';
-    src: url('fontspring-demo-criteriacf-light-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'Criteria CF - medium';
-    src: url('fontspring-demo-criteriacf-medium-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'Criteria_CF_regular';
-    src: url('fontspring-demo-criteriacf-regular-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
+} */
+/* @font-face {
     font-family: 'criteria_cf';
     src: url('fontspring-demo-criteriacf-super-webfont.woff2') format('woff2'),
          url('fontspring-demo-criteriacf-super-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: normal;     
     font-style: normal;
-
-}
-@font-face {
-    font-family: 'Criteria CF - thin';
-    src: url('fontspring-demo-criteriacf-thin-webfont.woff2') format('woff2'),
-         url('fontspring-demo-criteriacf-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
