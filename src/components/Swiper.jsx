@@ -20,7 +20,7 @@ export default function App() {
     <>
       <Swiper
         slidesPerView={'auto'}
-        spaceBetween={22}
+        spaceBetween={0}
         pagination={{
           type: "progressbar",
         }}

@@ -20,7 +20,9 @@ function Hero() {
           First Digital Agency in Morocco with <span>subscriptions </span>
           model and <span>unlimited request</span> to scale your business.
         </p>
-        <button>Get Started</button>
+        <button>Get Started
+          <img src="../icon/large-flech.svg" alt="" />
+        </button>
       </div>
 
       <div className="happy-client">

@@ -6,7 +6,12 @@ function Navbar() {
       <img
         src="../icon/logo-blue.svg"
         alt="offzone logo"
-        className="nav-logo"
+        className="nav-logo whitetext"
+      />
+      <img
+        src="../icon/logo-icon.svg"
+        alt="offzone logo"
+        className="nav-logo icon"
       />
       <ul>
         <a href="/">
@@ -32,6 +37,9 @@ function Navbar() {
             Contact <img src="../icon/flech.svg" alt="" />{" "}
           </li>
         </a>
+        <li className="nav-btn">
+          <img src="../icon/menu-btn.svg" alt="" />{" "}
+        </li>
       </ul>
     </nav>
   );
