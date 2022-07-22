@@ -8,7 +8,7 @@ $CF-semibold: "Criteria_CF_semibold";
 // $CF-bold: "Criteria CF - bold";
 // $CF-extralight: "Criteria_CF_extrabold";
 // $CF-extrabold: "Criteria CF - extrabold";
-// $CF-super: "Criteria CF - super";
+// $CF-super: "Criteria_CF_super";
 
 // Colors
 $blue: #025385;
@@ -27,14 +27,10 @@ body {
   *::first-letter {
     text-transform: uppercase;
   }
-  * {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
+  *::selection {
+    color: $blue;
+    background: $green;
   }
 
   a,
@@ -58,9 +54,19 @@ html {
   scroll-padding: 20px;
 }
 
+.noise{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
 .main-page {
   min-width: 100vw;
   max-width: 100vw;
+
 
   .top {
     width: 0;
@@ -256,7 +262,73 @@ html {
 .main-content {
   min-height: 100vh;
   width: 100vw;
-  margin-top: 100px;
+
+  .about {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px calc(50vw - 660px) 40px 0;
+    margin: 50px 0 40px 0;
+    scroll-margin-top: 100px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 45px;
+
+      .about-img {
+        width: 50%;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        .blue-bg {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          z-index: 0;
+          background-color: $green;
+          width: calc(100% - 100px);
+          height: calc(100% - 140px);
+          // height: 520px;
+        }
+        img {
+          position: relative;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+      .about-content {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+          font-size: 48px;
+        }
+
+        p {
+          line-height: 19px;
+          padding-right: 20px;
+          font-family: $CF-light;
+          margin-bottom: 10px;
+        }
+
+        a {
+          margin-top: 10px;
+          color: $blue;
+          font-family: $CF-semibold;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 
   .services {
     width: 100%;
@@ -264,8 +336,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px calc(50vw - 660px) 60px calc(50vw - 660px);
-    margin: 100px 0;
+    padding: 40px calc(50vw - 660px) 40px calc(50vw - 660px);
+    margin: 40px 0;
+    scroll-margin-top: 50px;
 
     .container {
       display: flex;
@@ -335,6 +408,87 @@ html {
     }
   }
 
+  .benefits {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    margin: 40px 0 40px 0;
+    scroll-margin-top: 120px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          font-size: 48px;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-family: $CF-light;
+          width: 450px;
+          margin-bottom: 30px;
+          padding-bottom: 0;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+        > div {
+          display: flex;
+          gap: 20px;
+          margin: 10px 0;
+          width: fit-content;
+
+          .item {
+            width: 463px;
+            height: 138px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            border: 2px solid $blue;
+
+            h4 {
+              font-size: 18px;
+              margin-top: 0;
+              margin-bottom: 5px;
+            }
+
+            p {
+              margin: 0;
+              font-family: $CF-light;
+              font-size: 14px;
+            }
+          }
+
+          &:first-child {
+            transform: translateX(calc(-10% - 20px - 463px - 100px));
+          }
+
+          &:last-child {
+            transform: translateX(-10%);
+          }
+        }
+      }
+    }
+  }
+
   .works {
     width: 100%;
     height: fit-content;
@@ -342,8 +496,9 @@ html {
     justify-content: center;
     align-items: center;
     // padding: 60px calc(50vw - 660px) 60px calc(50vw - 660px);
-    padding: 60px 0 60px 0;
-    margin: 100px 0;
+    padding: 40px 0 40px 0;
+    margin: 40px 0;
+    scroll-margin-top: 50px;
 
     .container {
       display: flex;
@@ -487,6 +642,63 @@ html {
     }
   }
 
+  .membership {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px calc(50vw - 660px) 40px calc(50vw - 660px);
+    margin: 40px 0;
+
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          text-align: center;
+          font-size: 48px;
+          margin-bottom: 0;
+        }
+        > p {
+          font-family: $CF-light;
+          margin-top: 10px;
+          margin-bottom: 35px;
+          width: 560px;
+          text-align: center;
+        }
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        .item {
+          height: 80px;
+          width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 4px solid $green;
+          font-size: 18px;
+          background-color: #f8f8f8;
+          font-family: $CF-medium;
+        }
+      }
+    }
+  }
+
   .plans {
     width: 100%;
     height: fit-content;
@@ -496,6 +708,7 @@ html {
     padding: 60px calc(50vw - 660px) 80px calc(50vw - 660px);
     margin: 100px 0;
     background: #f8f8f8;
+    scroll-margin-top: 50px;
 
     .container {
       width: 100%;
@@ -674,6 +887,164 @@ html {
       }
     }
   }
+
+  .faqs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px calc(50vw - 660px) 40px calc(50vw - 660px);
+    margin: 40px 0;
+    flex-direction: column;
+    scroll-margin-top: 50px;
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0 15px;
+
+      > div {
+        flex-direction: column;
+        display: flex;
+        gap: 25px;
+        width: 50%;
+        margin: 10px 12.5px;
+
+        .item {
+          width: 100%;
+          height: 80px;
+          padding: 30px 20px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: #f8f8f8;
+          cursor: pointer;
+
+          * {
+            pointer-events: none;
+          }
+
+          .item-content {
+            width: 100%;
+
+            p {
+              display: none;
+              font-size: 14px;
+              line-height: 17px;
+              font-family: $CF-extralight;
+              margin-bottom: 0;
+            }
+            span {
+              font-size: 16px;
+              font-family: $CF-medium;
+            }
+          }
+
+          .btn {
+            height: 24px;
+            width: 24px;
+            position: relative;
+
+            &:after,
+            &:before {
+              content: "";
+              background-color: $black;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+            &:before {
+              width: 12px;
+              height: 3px;
+            }
+
+            &:after {
+              width: 3px;
+              height: 12px;
+            }
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 6px;
+            width: 6px;
+            background-color: #04e2b7;
+          }
+        }
+
+        .open {
+          height: fit-content;
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            height: 6px;
+            width: 6px;
+            background-color: #04e2b7;
+          }
+
+          .btn {
+            pointer-events: all;
+            height: 100%;
+            &:after {
+              display: none;
+            }
+            &:before {
+              top: 5px;
+            }
+          }
+
+          .item-content {
+            width: 100%;
+
+            p {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      width: 170px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $blue;
+      border: 1px solid $blue;
+      border-radius: 30px;
+      margin-top: 30px;
+      font-family: $CF-semibold;
+      background-color: transparent;
+    }
+  }
+
+  .client {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 60px 0 35px 0;
+    img {
+      height: 60px;
+    }
+  }
 }
 
 footer {
@@ -775,7 +1146,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 1260px;
-    padding: 0 20px;
+    padding: 0 0;
     margin: auto;
 
     > div {
@@ -783,12 +1154,15 @@ footer {
       align-items: center;
       width: fit-content;
 
-      div {
-        display: flex;
+      > img {
+        margin: auto 0;
       }
 
-      img {
-        margin: auto 5px;
+      div {
+        display: flex;
+        img {
+          margin: auto 5px;
+        }
       }
 
       hr {

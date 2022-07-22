@@ -14,13 +14,13 @@ function Navbar() {
         className="nav-logo icon"
       />
       <ul>
-        <a href="/">
+        <a href="#about">
           <li>About</li>
         </a>
         <a href="#services">
           <li>Services</li>
         </a>
-        <a href="/">
+        <a href="#benefits">
           <li>Benefits</li>
         </a>
         <a href="#works">
@@ -29,10 +29,10 @@ function Navbar() {
         <a href="#pricing">
           <li>Pricing</li>
         </a>
-        <a href="/">
+        <a href="#faqs">
           <li>FAQs</li>
         </a>
-        <a href="/">
+        <a href="#contact">
           <li className="contact">
             Contact <img src="../icon/flech.svg" alt="" />{" "}
           </li>
