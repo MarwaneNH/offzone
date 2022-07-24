@@ -10,6 +10,7 @@ import Benefits from "../components/Benefits";
 import Membership from "../components/Membership";
 import FAQs from "../components/FAQs";
 import Client from "../components/Client";
+import Blog from "../components/Blogs";
 
 function MainPage() {
   return (
@@ -28,6 +29,7 @@ function MainPage() {
         <Membership />
         <Plans />
         <FAQs />
+        <Blog />
         <Client />
       </div>
 

@@ -2,8 +2,6 @@ import React from "react";
 import { works } from "../asset/data/works";
 import Swiper from "../components/Swiper";
 
-console.log(works);
-
 function Works() {
   return (
     <div className="works" id="works">
@@ -11,7 +9,7 @@ function Works() {
         <h1>Recent Work</h1>
         <div className="content">
           {/* <div className="content-container"> */}
-          <Swiper />
+          <Swiper array={works} />
           {/* </div> */}
         </div>
         <div className="barre">

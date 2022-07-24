@@ -4,7 +4,7 @@ import Workitem from "./Workitem";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Data
-import { works } from "../asset/data/works";
+// import { works } from "../asset/data/works";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-export default function App() {
+export default function App({array}) {
   return (
     <>
       <Swiper
@@ -27,7 +27,7 @@ export default function App() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {works.map((project) => (
+        {array.map((project) => (
           <SwiperSlide key={project.id}>
             <Workitem project={project} />
           </SwiperSlide>

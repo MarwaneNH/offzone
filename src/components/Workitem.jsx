@@ -2,7 +2,7 @@ import React from "react";
 
 function Workitem({ project }) {
   return (
-    <div className="item">
+    <div className={`item ${project.type + '-item'}`}>
       <div className="item-img">
         <img src={`../image/${project.img}`} alt={`${project.name} project`} />
         <div className="darkness"></div>
