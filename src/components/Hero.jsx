@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 function Hero() {
+  const btn = useRef();
+
+  useEffect(() => {
+    const scrolled = () => {
+      if (window.pageYOffset < 100) {
+        btn.current.classList.add("scrolled");
+        btn.current.href = "#top";
+      }
+      if (window.pageYOffset === 0) {
+        btn.current.classList.remove("scrolled");
+        btn.current.href = "#services";
+      }
+    };
+    window.addEventListener("scroll", scrolled);
+    window.addEventListener("click", scrolled);
+  });
+
   return (
     <div className="hero">
-      <a href="#services" className="flech-btn">
-        <img src="../icon/flech.svg" alt="" height='15px' />
+      <a href="#services" className="flech-btn" ref={btn}>
+        <img src="../icon/flech.svg" alt="" height="15px" />
       </a>
       <div className="bg">
         <img src="../image/3D-object01.png" alt="" />
@@ -20,7 +37,8 @@ function Hero() {
           First Digital Agency in Morocco with <span>subscriptions </span>
           model and <span>unlimited request</span> to scale your business.
         </p>
-        <button>Get Started
+        <button>
+          Get Started
           <img src="../icon/large-flech.svg" alt="" />
         </button>
       </div>

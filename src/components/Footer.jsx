@@ -13,15 +13,19 @@ function Footer() {
           </p>
         </div>
         <div className="action">
+          <a href="https://calendly.com/offzone/30min" target="_blank">
+            <div className="bg"></div>
+          </a>
           <img src="../image/Asset 7@288x 1.png" alt="" />
           <span>
             Book a call/ <br />
             consultation
           </span>
-          <div className="bg"></div>
         </div>
         <div className="action">
-          <div className="bg"></div>
+          <a href="mailto:contact@offzone.net">
+            <div className="bg"></div>
+          </a>
           <img src="../image/Asset 10@288x 1.png" alt="" />
           <span>
             Send us <br />
@@ -68,9 +72,9 @@ function Footer() {
         </ul>
       </div>
 
-      <a href="#top" className="to-top">
+      {/* <a href="#top" className="to-top">
         <img src="../icon/flech.svg" alt="" />
-      </a>
+      </a> */}
     </footer>
   );
 }
