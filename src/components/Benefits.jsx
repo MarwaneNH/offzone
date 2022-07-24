@@ -52,7 +52,7 @@ function Benefits() {
               </div>
             </div>
             {/* Dup */}
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/unique-icon.png" alt="" />
               <div>
                 <h4>Unique and all yours</h4>
@@ -62,7 +62,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/unlimited-icon.png" alt="" />
               <div>
                 <h4>Unlimited requests</h4>
@@ -72,7 +72,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/lightning-icon.png" alt="" />
               <div>
                 <h4>Lightning fast delivery</h4>
@@ -82,7 +82,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/fixed-icon.png" alt="" />
               <div>
                 <h4>Fixed monthly rate</h4>
@@ -129,7 +129,7 @@ function Benefits() {
               </div>
             </div>
             {/* Dup */}
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/top-notch-icon.png" alt="" />
               <div>
                 <h4>Top-notch quality</h4>
@@ -138,14 +138,14 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/flexible-icon.png" alt="" />
               <div>
                 <h4>Flexible and scalable</h4>
                 <p>Scale up or down as needed, and cancel at anytime.</p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/unique-icon.png" alt="" />
               <div>
                 <h4>Unique and all yours</h4>
@@ -155,7 +155,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            <div className="item dup-item">
               <img src="../image/lightning-icon.png" alt="" />
               <div>
                 <h4>Lightning fast delivery</h4>
