@@ -26,7 +26,7 @@ function About() {
             industry in Morocco
           </p>
 
-          <a href="/">View Profile <img src="../icon/flech.svg" alt="" /></a>
+          <a href="https://offzone.vercel.app/document/profile.pdf" target="__blank">View Profile <img src="../icon/flech.svg" alt="" /></a>
         </div>
       </div>
     </div>

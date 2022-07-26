@@ -16,7 +16,10 @@ function Works() {
           <div className="scroll-bar">
             <div></div>
           </div>
-          <a href="/">
+          <a
+            href="https://offzone.vercel.app/document/portfolio.pdf"
+            target="__blank"
+          >
             More Work <img src="../icon/flech.svg" alt="" />
           </a>
         </div>

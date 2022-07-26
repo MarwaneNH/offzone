@@ -73,7 +73,7 @@ function Plans() {
               <li>Real time collaboration via Slack</li>
             </ul>
             <div className="btns">
-              <button>Get Started</button>
+              <button>Book a Call</button>
             </div>
           </div>
 

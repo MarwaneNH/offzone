@@ -39,9 +39,25 @@ function Footer() {
           <img src="../icon/logo-white.svg" alt="offzone logo" />
           <hr />
           <div>
-            <img src="../icon/logo-linkedin.svg" alt="linkedin logo" />
-            <img src="../icon/logo-instagram.svg" alt="instagram logo" />
-            <img src="../icon/logo-facebook.svg" alt="facebook logo" />
+            <a
+              href="https://www.linkedin.com/company/offzone-agency/"
+              target="__blank"
+            >
+              <img src="../icon/logo-linkedin.svg" alt="linkedin logo" />
+            </a>
+            <a
+              href="https://www.instagram.com/offzone_agency/?hl=fr"
+              target="__blank"
+            >
+              <img src="../icon/logo-instagram.svg" alt="instagram logo" />
+            </a>
+            <a href="https://www.facebook.com/offzone.agency">
+              <img
+                src="../icon/logo-facebook.svg"
+                alt="facebook logo"
+                target="__blank"
+              />
+            </a>
           </div>
         </div>
         <ul>

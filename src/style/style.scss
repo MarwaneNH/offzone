@@ -369,7 +369,7 @@ html {
 
   .about {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -395,7 +395,10 @@ html {
         position: relative;
         display: flex;
         justify-content: right;
-        align-items: center;
+        align-items: flex-start;
+        max-height: 600px;
+        overflow: hidden;
+        padding: 10px 10px 10px 0;
 
         .blue-bg {
           position: absolute;
@@ -410,6 +413,9 @@ html {
         img {
           position: relative;
           width: 100%;
+          height: 100%;
+          object-position: top;
+          object-fit: contain;
           z-index: 1;
         }
       }
@@ -602,12 +608,7 @@ html {
               font-size: 14px;
             }
           }
-
-          &:first-child {
-            // animation: identifier 5s infinite linear;
-          }
           &:last-child {
-            // transform: translateX(calc(-100% + 100vw - 10px));
             animation-direction: reverse;
           }
         }
@@ -632,6 +633,10 @@ html {
       align-items: center;
       width: 100%;
       // padding: 0 20px;
+
+      a {
+        color: $black;
+      }
 
       .swiper {
         padding: 0 max(calc(50vw - 630px), 40px) 40px
@@ -882,6 +887,10 @@ html {
           button {
             width: fit-content !important;
             padding: 10px 25px;
+            transition: all 200ms ease;
+            &:hover {
+              background-color: #ffffffab !important;
+            }
           }
           .ticket {
             // font-family: "Poppins";
@@ -994,6 +1003,10 @@ html {
               border-radius: 30px;
               font-size: 18px;
               font-family: $CF-semibold;
+              transition: all 880ms ease;
+              &:hover {
+                background-color: #04e2b60e;
+              }
             }
             a {
               font-size: 14px;
@@ -1026,6 +1039,8 @@ html {
     margin: 40px 0;
     flex-direction: column;
     scroll-margin-top: 50px;
+
+    user-select: none;
 
     h1 {
       text-align: center;
@@ -1175,6 +1190,12 @@ html {
       margin-top: 30px;
       font-family: $CF-semibold;
       background-color: transparent;
+      transition: all 400ms ease;
+
+      &:hover {
+        background-color: $blue;
+        color: white;
+      }
     }
   }
 
@@ -1192,6 +1213,7 @@ html {
     .container .content .blog-item {
       height: 500px;
       width: 413px;
+      color: $black;
 
       .item-img {
         width: 100%;
@@ -1918,6 +1940,7 @@ footer {
   .main-content .benefits .container .content > div {
     flex-direction: column;
     transform: translateY(0) !important;
+    animation: none;
   }
   .main-content .benefits .container .content > div .item {
     width: 100%;
@@ -2021,9 +2044,8 @@ footer {
       height: 4px;
       width: 4px;
     }
-
   }
-  .open{
+  .open {
     height: fit-content !important;
   }
   .main-content .faqs .content > div .item .item-content span {
@@ -2095,7 +2117,7 @@ footer {
         margin: 5px;
 
         .item-img {
-          height: 208px ;
+          height: 208px;
         }
         .item-content {
           height: calc(100% - 200px);
@@ -2198,5 +2220,152 @@ footer {
   }
   footer {
     gap: 45px;
+  }
+}
+
+// Screen centrelase on click-scroll / Services
+@media only screen and (max-height: 900px) {
+  .main-content .services {
+    scroll-margin-top: 40px;
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .container .content .item {
+      padding: 30px;
+    }
+  }
+}
+@media only screen and (max-height: 850px) {
+  .main-content .services {
+    scroll-margin-top: 20px;
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container .content .item {
+      padding: 30px;
+    }
+  }
+}
+@media only screen and (max-height: 800px) {
+  .main-content .services {
+    scroll-margin-top: 15px;
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container .content .item {
+      padding: 20px;
+    }
+  }
+}
+@media only screen and (max-height: 770px) {
+  .main-content .services {
+    scroll-margin-top: 20px;
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media only screen and (max-height: 750px) {
+  .main-content .services {
+    scroll-margin-top: 10px;
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-height: 730px) {
+  .main-content .services {
+    scroll-margin-top: 10px;
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    .container .content .item {
+      padding: 10px 20px !important;
+    }
+  }
+}
+@media only screen and (max-height: 700px) {
+  .main-content .services {
+    scroll-margin-top: 0px;
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    .container .content .item {
+      padding: 10px 20px !important;
+    }
+  }
+}
+
+// Screen centrelase on click-scroll / Benefits
+@media only screen and (max-height: 770px) {
+  .main-content .benefits {
+    scroll-margin-top: 80px;
+  }
+}
+@media only screen and (max-height: 720px) {
+  .main-content .benefits {
+    scroll-margin-top: 60px;
+  }
+}
+
+// Screen centrelase on click-scroll / Works
+@media only screen and (max-height: 850px) {
+  .main-content .works {
+    scroll-margin-top: 20px;
+  }
+}
+@media only screen and (max-height: 820px) {
+  .main-content .works {
+    scroll-margin-top: 0;
+  }
+}
+@media only screen and (max-height: 750px) and (min-width: 1200px) {
+  .main-content .works .container h1 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+// Screen centrelase on click-scroll / Plans
+@media only screen and (max-height: 850px) {
+  .main-content .plans {
+    scroll-margin-top: 30px;
+  }
+}
+@media only screen and (max-height: 790px) {
+  .main-content .plans {
+    scroll-margin-top: 10px;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .main-content .plans {
+    scroll-margin-top: 0;
+  }
+}
+@media only screen and (max-height: 740px) {
+  .main-content .plans {
+    padding-top: 50px;
+  }
+}
+
+// Screen centrelase on click-scroll / Plans
+@media only screen and (max-height: 850px) {
+  .main-content .faqs {
+    scroll-margin-top: 30px;
+  }
+}
+@media only screen and (max-height: 750px) {
+  .main-content .faqs {
+    scroll-margin-top: 30px;
+  }
+}
+@media only screen and (max-height: 720px) {
+  .main-content .faqs {
+    scroll-margin-top: 10px;
   }
 }
