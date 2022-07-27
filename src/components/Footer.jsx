@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
+import { PopupButton } from "react-calendly";
 
 function Footer() {
+  const calendarBtn = useRef();
+  const clk = () => document.querySelector(".calendarBtn").click();
   return (
     <footer id="contact">
+      <PopupButton
+        ref={calendarBtn}
+        url="https://calendly.com/offzone/30min"
+        rootElement={document.getElementById("root")}
+        className='calendarBtn'
+      />
       <div className="isInterested">
         <div className="content">
           <h2>Interested?</h2>
@@ -12,10 +21,10 @@ function Footer() {
             unlock your business potential.
           </p>
         </div>
-        <div className="action">
-          <a href="https://calendly.com/offzone/30min" target="_blank">
+        <div className="action" onClick={clk}>
+          <div>
             <div className="bg"></div>
-          </a>
+          </div>
           <img src="../image/Asset 7@288x 1.png" alt="" />
           <span>
             Book a call/ <br />

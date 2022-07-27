@@ -677,6 +677,7 @@ html {
         }
 
         .item {
+          cursor: pointer;
           width: 409px;
           height: 565px;
           border: 1px solid $blue;
@@ -759,6 +760,7 @@ html {
         align-items: center;
         width: 100%;
         transform: translateY(-12px);
+        z-index: 10;
 
         a {
           font-family: $CF-semibold;
@@ -1329,10 +1331,12 @@ footer {
         font-size: 20px;
       }
 
-      a {
+      a,
+      > div {
         height: fit-content;
         width: fit-content;
         pointer-events: all;
+        cursor: pointer;
       }
 
       .bg {
@@ -1420,7 +1424,9 @@ footer {
     }
   }
 }
-
+.calendarBtn{
+  display: none;
+}
 // Navbar-Responsivity
 @media only screen and (max-width: 900px) {
   .main-page header nav ul li {

@@ -1,6 +1,7 @@
 import React from "react";
 
 function Plans() {
+  const clk = () => document.querySelector(".calendarBtn").click();
   return (
     <div className="plans" id="pricing">
       <div className="container">
@@ -43,7 +44,7 @@ function Plans() {
             </ul>
             <div className="btns">
               <button>Get Started</button>
-              <a href="/">BOOK A CALL</a>
+              <a onClick={clk}>BOOK A CALL</a>
             </div>
           </div>
 

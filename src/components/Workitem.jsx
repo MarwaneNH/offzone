@@ -1,9 +1,10 @@
 import React from "react";
 
 function Workitem({ project }) {
+  const clk = () => document.querySelector(".calendarBtn").click();
   return (
-    <div className={`item ${project.type + "-item"}`}>
-      <a href="https://calendly.com/offzone/30min" target="_blank">
+    <div className={`item ${project.type + "-item"}`} onClick={clk}>
+      {/* <a href="." target="__blank"> */}
         <div className="item-img">
           <img
             src={`../image/${project.img}`}
@@ -18,7 +19,7 @@ function Workitem({ project }) {
           </div>
           <button>View Project</button>
         </div>
-      </a>
+      {/* </a> */}
     </div>
   );
 }
